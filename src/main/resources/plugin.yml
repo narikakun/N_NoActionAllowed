@@ -1,0 +1,16 @@
+name: N_NoActionAllowed
+version: '${project.version}'
+main: me.ysms.n_noactionallowed.N_NoActionAllowed
+api-version: '1.20'
+
+commands:
+  naa:
+    description: 基本コマンド
+    permission: naa.command
+    usage: /<command> [start|end]
+    aliases: [naa]
+
+permissions:
+  naa.command:
+    description: 基本コマンド権限
+    default: op
